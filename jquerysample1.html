@@ -1,0 +1,61 @@
+
+<html>
+<head>  <!-- demo_basic04.html   -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script type="text/javascript"> 
+$(document).ready(function(){
+
+	//alert("I have an initially hidden div named 'panel' which slide-toggles when you click the gray paragraph.")
+
+	$(".Toggle").click(function(){
+	//	$(".panel")  .  slideToggle("slow");		//600 ms
+	var v = "Teddy bear got hit by a car :("
+	//alert(v) ;
+	$(".panel").html(v).slideToggle().slideToggle(5000);
+	//$(".panel").slideToggle();
+	
+	
+	
+	
+	  });
+	  $(".Togglex").click(function(){
+	//	$(".panel")  .  slideToggle("slow");		//600 ms
+	var v = "DUDE!! He got hit by a car... it's not a joke, not funny..."
+	//alert(v) ;
+	$(".panel").html(v).slideToggle().slideToggle(5000);
+	//$(".panel").slideToggle();
+	
+	
+	
+	
+	  });
+	  
+});
+</script>
+<style type="text/css"> 
+.Toggle { background:#bbbbbb; }
+.Togglex { background:#bbbbbb; }
+.panel  { height:150px; background:lime;
+          display:none;   
+          font-family: Courier; 
+		  font-weight:bold; }
+  p     { font-size: 3em; }
+</style>
+</head> <body>
+
+<div class="panel">
+	<p>You.</p>
+
+</div>
+
+<br><br> 
+<p class="Toggle">Wanna hear a joke? Click me!</p>
+
+<p class="Togglex">Wanna hear it again? Click me!</p>
+
+</body>
+</html>
+
+
+
